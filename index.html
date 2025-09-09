@@ -3,13 +3,13 @@
   <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge" />
-	<title>GpXiutTime_</title>
+	<title>GpXiutTme</title>
 	<style>
 		html {
 			height:100%;
 		}
 		body {
-			background-color:#161B23;
+			background-color:#2C3547;
 			margin:0;
 			height:100%;
 		}
@@ -42,7 +42,7 @@
 }
 </style>
 <script>
-// 具有圆形边界碰撞的粒子系统
+// 圆形边界碰撞
 function initParticles() {
     const canvas = document.createElement('canvas');
     canvas.id = 'particles-with-materials';
@@ -52,7 +52,7 @@ function initParticles() {
         left: 0 !important;
         width: 100% !important;
         height: 100% !important;
-        z-index: 0 !important;
+        z-index: 4 !important;
         background: transparent !important;
         pointer-events: none !important;
     `;
@@ -91,7 +91,15 @@ function initParticles() {
     const config = {
         particles: {
             number: { value: 150 },
-            color: { value: "#4A5B79" },
+            color: { 
+                value: [
+                    "#4fb2ff",  // 深蓝色
+                    "#6C5B7B",  // 紫色
+                    "#2aec81",  // 绿色
+                    "#F67280",  // 浅红色
+                    "#baa414"   // 浅橙色
+                ] 
+            },
             size: { value: 3, random: true, random_min: 0.5 },
             lineLinked: { enable: true, distance: 250 },
             move: { 
@@ -302,8 +310,8 @@ window.HYPE_eventListeners.push({
   <body>
 	<!-- copy these lines to your document: -->
 
-	<div id="gpxiuttime_hype_container" class="HYPE_document" style="margin:auto;position:relative;width:1240px;height:1000px;overflow:hidden;">
-		<script type="text/javascript" charset="utf-8" src="GpXiutTime_.hyperesources/gpxiuttime_hype_generated_script.js?70633"></script>
+	<div id="gpxiuttme_hype_container" class="HYPE_document" style="margin:auto;position:relative;width:100%;height:100%;overflow:hidden;">
+		<script type="text/javascript" charset="utf-8" src="GpXiutTme.hyperesources/gpxiuttme_hype_generated_script.js?94328"></script>
 	</div>
 
 	<!-- end copy -->
@@ -314,7 +322,7 @@ window.HYPE_eventListeners.push({
 
 	<div style="display:none" aria-hidden=true>
 
-		<div>00
+		<div>60
 </div>
 		<div>02
 </div>

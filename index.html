@@ -3,7 +3,7 @@
   <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge" />
-	<title>GpXiutTme</title>
+	<title>GpXiuTime</title>
 	<style>
 		html {
 			height:100%;
@@ -41,6 +41,27 @@
     font-weight: bold;
 }
 </style>
+	<script type="text/javascript" src="GpXiuTime.hyperesources/particles.js"></script>
+<!-- 引入 particles.js 库 -->
+<script src="GpXiuTime.hyperesources/particles.js"></script>
+
+<!-- 初始化粒子效果 -->
+<script>
+// 等待页面完全加载
+window.onload = function() {
+  // 读取配置文件并初始化
+  fetch('GpXiuTime.hyperesources/particles.json')
+    .then(response => response.json())
+    .then(config => {
+      // 初始化粒子，容器ID与矩形的Element ID一致
+      particlesJS('particles-js', config);
+    })
+    .catch(error => {
+      console.error('粒子配置加载失败:', error);
+    });
+};
+</script>
+
 <script>
 // 圆形边界碰撞
 function initParticles() {
@@ -52,7 +73,7 @@ function initParticles() {
         left: 0 !important;
         width: 100% !important;
         height: 100% !important;
-        z-index: 4 !important;
+        z-index: 5 !important;
         background: transparent !important;
         pointer-events: none !important;
     `;
@@ -310,8 +331,8 @@ window.HYPE_eventListeners.push({
   <body>
 	<!-- copy these lines to your document: -->
 
-	<div id="gpxiuttme_hype_container" class="HYPE_document" style="margin:auto;position:relative;width:100%;height:100%;overflow:hidden;">
-		<script type="text/javascript" charset="utf-8" src="GpXiutTme.hyperesources/gpxiuttme_hype_generated_script.js?50749"></script>
+	<div id="gpxiutime_hype_container" class="HYPE_document" style="margin:auto;position:relative;width:100%;height:100%;overflow:hidden;">
+		<script type="text/javascript" charset="utf-8" src="GpXiuTime.hyperesources/gpxiutime_hype_generated_script.js?89268"></script>
 	</div>
 
 	<!-- end copy -->
